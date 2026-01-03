@@ -3,30 +3,30 @@
 
 <style type="text/css">
   h1 {
-	  font-family: Arial, Helvetica, sans-serif;
-	  color: #F00;
-	  font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F00;
+    font-size: x-large;
   }
   p {
-	  font-family: Arial, Helvetica, sans-serif;
-	  color: #000;
-	  font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: small;
   }
   body {
-	  background-color: #FFF;
-      text-align: center;
-      margin: 0;
-      padding: 0;
+    background-color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
   #bloctxt {
-	  border-left-width: 5px;
-	  border-left-style: solid;
-	  border-left-color: #F00;
-	  padding-left: 10px;
-	  position: absolute;
-	  left: 50%%;
-	  width: 600px;
-	  margin-left: -260px
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #F00;
+    padding-left: 10px;
+    position: absolute;
+    left: 50%;
+    width: 600px;
+    margin-left: -260px;
   }
 </style>
 
@@ -34,7 +34,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
   <!-- Enables full-screen on iOS devices -->
-  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+  <meta name="viewport"
+        content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,
+                 user-scalable=no, target-densitydpi=device-dpi" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="HandheldFriendly" content="true" />
@@ -76,14 +78,13 @@
   </canvas>
 </div>
 
-<!-- Discord Embedded App SDK (SAFE ADDITION) -->
+<!-- Discord Embedded App SDK -->
 <script src="https://cdn.discordapp.com/embedded-apps/sdk.js"></script>
-
 <script>
   (function () {
     try {
       const sdk = new DiscordSDK.DiscordSDK({
-        clientId: "YOUR_CLIENT_ID_HERE"
+        clientId: "1334424719876821043"
       });
 
       sdk.ready().then(() => {
